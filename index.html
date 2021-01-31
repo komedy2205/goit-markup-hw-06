@@ -351,8 +351,8 @@
                 </li>
             </ul>
         </div>
-        <div>
-            <p class="subscribe">Подпишитесь на рассылку</p>
+        <div class="sub">
+            <p class="subscribe__text">Подпишитесь на рассылку</p>
             <div class="subscribe-container">
             <form name="signup_form" autocomplete="off" novalidate>
                 <label>
@@ -360,7 +360,7 @@
                 </label>
             </form>
             <button class="subscribe-button" type="button">
-                <span class="sub-text">Подписаться</span>
+                <span class="subscribe-button__text">Подписаться</span>
                 <svg class="icon-send">
                     <use href="./img/symbol-defs.svg#icon-icon-send"></use>
                 </svg>
@@ -381,34 +381,34 @@
             <div class="modal-window">
                 <form name="data" autocomplete="off" novalidate>
                     <div class="name-section">
-                        <label>
+                        <label class="modal-label">
                             Имя
                             <input class="name-form" type="text" name="name" placeholder=" ">
-                            <svg class="name-form-img">
-                                <use href="./img/symbol-defs.svg#icon-name-form" width="18" height="18"></use>
+                            <svg class="name-form-img" width="12" height="12">
+                                <use href="./img/symbol-defs.svg#icon-name-form"></use>
                             </svg>
                         </label>
                     </div>
                     <div class="name-section">
-                        <label>
+                        <label class="modal-label">
                             Телефон
                             <input class="telephone-form" type="tel" name="phone_number" placeholder=" ">
-                            <svg class="name-form-img">
-                                <use href="./img/symbol-defs.svg#icon-tel-form" width="18" height="18"></use>
+                            <svg class="name-form-img" width="13" height="13">
+                                <use href="./img/symbol-defs.svg#icon-tel-form"></use>
                             </svg>
                         </label>
                     </div>
                     <div class="name-section">
-                        <label>
+                        <label class="modal-label">
                             Почта
                             <input class="email-form" type="email" name="email" placeholder=" ">
-                            <svg class="name-form-img">
-                                <use href="./img/symbol-defs.svg#icon-mail-form" width="18" height="18"></use>
+                            <svg class="name-form-img" width="15" height="12">
+                                <use href="./img/symbol-defs.svg#icon-mail-form"></use>
                             </svg>
                         </label>
                     </div>
                     <div class="name-section">
-                        <label>
+                        <label class="modal-label">
                             Комментарий
                             <textarea class="comment-form" type="text" name="name" placeholder="Введите текст"></textarea>
                         </label>

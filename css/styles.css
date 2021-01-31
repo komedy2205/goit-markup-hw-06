@@ -169,7 +169,7 @@ header {
   padding-bottom: 32px;
   padding-top: 32px;
 
-  transition-property: opacity;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -177,8 +177,6 @@ header {
 .link-portfolio:focus,
 .link-portfolio:hover {
   color: var(--sec-backgroundcolor);
-
-  opacity: 1;
 }
 
 .link-studio:hover,
@@ -611,11 +609,17 @@ button {
 .overlay {
   position: absolute;
 
-  bottom: 25px;
+  bottom: 0px;
+  left: 0;
   width: 100%;
+  height: 100%;
 }
 
 .overlay-text {
+  position: absolute;
+  bottom: 25px;
+  left: 86px;
+
   font-weight: 700;
   text-transform: uppercase;
   color: var(--sec-text-color);
@@ -765,6 +769,7 @@ button {
 .our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-left: 15px;
 }
 
 .clients {
@@ -776,8 +781,7 @@ button {
   display: flex;
   align-items: center;
 
-  width: 170px;
-  height: 90px;
+  margin-right: 30px;
 }
 
 .clients-links {
@@ -785,14 +789,13 @@ button {
   flex-wrap: wrap;
   align-items: center;
 
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 90px;
 
   fill: var(--social-links-color);
   border: 1px solid var(--social-links-color);
   border-radius: 4px;
 
-  margin-right: 30px;
   padding-top: 0px;
   padding-bottom: 0px;
 
@@ -934,6 +937,10 @@ footer {
   display: flex;
 }
 
+.join-container {
+  margin-right: 90px;
+}
+
 .join {
   font-weight: bold;
   font-size: 14px;
@@ -1019,7 +1026,7 @@ footer {
   display: flex;
 }
 
-.subscribe {
+.subscribe__text {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -1030,7 +1037,6 @@ footer {
   color: var(--sec-text-color);
 
   margin-bottom: 20px;
-  margin-left: 93px;
 }
 
 .subscribe-form {
@@ -1041,7 +1047,6 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: var(--main-backgroundcolor);
 
-  margin-left: 93px;
   padding-left: 16px;
 }
 
@@ -1059,7 +1064,7 @@ footer {
   background-color: var(--sec-backgroundcolor);
 }
 
-.sub-text {
+.subscribe-button__text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1114,7 +1119,7 @@ footer {
 .modal {
   position: absolute;
 
-  border-radius: 4%;
+  border-radius: 4px;
 
   width: 528px;
   height: 581px;
@@ -1148,6 +1153,16 @@ footer {
   position: relative;
 }
 
+.modal-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+
+  letter-spacing: 0.01em;
+
+  color: var(--descrip-text-color);
+}
+
 .name-form {
   display: block;
   width: 448px;
@@ -1173,6 +1188,7 @@ footer {
   fill: var(--main-text-color);
 
   top: 50%;
+  transform: translateY(50%);
   left: 12px;
 }
 
@@ -1241,8 +1257,8 @@ footer {
   margin-top: 4px;
 
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   letter-spacing: 0.01em;
 
   padding-left: 16px;
@@ -1253,7 +1269,7 @@ footer {
 .comment-form:hover {
   outline: none;
   border: 1px solid var(--sec-backgroundcolor);
-  cursor: pointer;
+  cursor: text;
 }
 
 .comment-form:focus + .name-form-img,
@@ -1270,6 +1286,11 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.checkbox:focus,
+.checkbox:hover {
+  cursor: pointer;
 }
 
 .agree {
@@ -1312,7 +1333,7 @@ footer {
   left: 0;
   transform: translateY(-50%);
 
-  border: 1px solid var(--sec-backgroundcolor);
+  border: 1px solid var(--main-text-color);
 }
 
 .send-button-block {
