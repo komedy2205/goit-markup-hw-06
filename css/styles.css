@@ -823,22 +823,22 @@ button {
   margin-bottom: auto;
 }
 
-.logo-1 {
+.clients-logo:nth-child(1) {
   width: 44px;
   height: 49px;
 }
 
-.logo-4 {
+.clients-logo:nth-child(4) {
   width: 79px;
   height: 42px;
 }
 
-.logo-5 {
+.clients-logo:nth-child(5) {
   width: 59px;
   height: 47px;
 }
 
-.logo-6 {
+.clients-logo:nth-child(6) {
   width: 88px;
   height: 45px;
 }
@@ -1031,8 +1031,6 @@ footer {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  width: 219px;
-  height: 16px;
   text-transform: uppercase;
   color: var(--sec-text-color);
 
@@ -1263,6 +1261,8 @@ footer {
 
   padding-left: 16px;
   padding-top: 12px;
+
+  resize: none;
 }
 
 .comment-form:focus,
@@ -1288,17 +1288,8 @@ footer {
   line-height: 1.71;
 }
 
-.checkbox:focus,
-.checkbox:hover {
-  cursor: pointer;
-}
-
 .agree {
   position: absolute;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .checkbox .text {
@@ -1314,6 +1305,13 @@ footer {
   letter-spacing: 0.03em;
 
   margin-left: 3px;
+}
+
+.agree:focus ~ .checkbox-icon,
+.agree:hover ~ .checkbox-icon {
+  fill: var(--main-backgroundcolor);
+
+  border: 1px solid var(--sec-backgroundcolor);
 }
 
 .agree:checked ~ .checkbox-icon {
