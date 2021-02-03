@@ -823,22 +823,32 @@ button {
   margin-bottom: auto;
 }
 
-.clients-logo:nth-child(1) {
+.clients-li:nth-child(1) .clients-logo {
   width: 44px;
   height: 49px;
 }
 
-.clients-logo:nth-child(4) {
+.clients-li:nth-child(2) .clients-logo {
+  width: 40px;
+  height: 52px;
+}
+
+.clients-li:nth-child(3) .clients-logo {
+  width: 41px;
+  height: 43px;
+}
+
+.clients-li:nth-child(4) .clients-logo {
   width: 79px;
   height: 42px;
 }
 
-.clients-logo:nth-child(5) {
+.clients-li:nth-child(5) .clients-logo {
   width: 59px;
   height: 47px;
 }
 
-.clients-logo:nth-child(6) {
+.clients-li:nth-child(6) .clients-logo {
   width: 88px;
   height: 45px;
 }
